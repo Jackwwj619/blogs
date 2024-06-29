@@ -1,5 +1,3 @@
-# Welcome to MkDocs
-
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+# Strive And Thrive
 
 welcome to my wiki

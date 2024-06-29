@@ -1,0 +1,1 @@
+{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"Welcome to MkDocs","text":"<p>For full documentation visit mkdocs.org.</p> <p>welcome to my wiki</p>"}]}
