@@ -1,2 +1,2 @@
-# This is [blogs of Jackwwj619](Jackwwj619.github.io/blogs) 
+# This is blogs of Jackwwj619
 about his notes, life, progress...
