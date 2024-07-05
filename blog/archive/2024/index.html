@@ -16,7 +16,7 @@
         <link rel="prev" href="../../category/test/">
       
       
-        <link rel="next" href="../../../about/">
+        <link rel="next" href="../../../leetcode/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -228,6 +228,26 @@
     
   
   Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../leetcode/" class="md-tabs__link">
+          
+  
+    
+  
+  Leetcode
 
         </a>
       </li>
@@ -594,6 +614,8 @@
       
         
       
+        
+      
     
     
       
@@ -639,6 +661,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../../category/study-notes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Study notes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
       <a href="../../category/test/" class="md-nav__link">
         
   
@@ -656,6 +701,92 @@
           </ul>
         </nav>
       
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../leetcode/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Leetcode
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Leetcode
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../leetcode/test/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    01xxx
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -718,8 +849,180 @@
   <div class="md-content" data-md-component="content">
     <div class="md-content__inner">
       <header class="md-typeset">
-        <h1 id="2024">2024</h1>
+        <h1 id="2024">2024<a class="headerlink" href="#2024" title="Permanent link">&para;</a></h1>
       </header>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="https://github.com/Jackwwj619.png" alt="Jack Wong">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-07-05 00:00:00">July 5, 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/study-notes/" class="md-meta__link">Study notes</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 min read
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="git-study-notes"><a class="toclink" href="../../2024/07/05/git-study-notes/">Git Study Notes</a></h2>
+<h3 id="commands"><a class="toclink" href="../../2024/07/05/git-study-notes/#commands">Commands</a></h3>
+<blockquote>
+<p>[!error] WARNING
+注意带--参数的**空格**</p>
+</blockquote>
+<h4 id="basic-commands"><a class="toclink" href="../../2024/07/05/git-study-notes/#basic-commands">Basic Commands</a></h4>
+<ol>
+<li><code>git add xxx.md</code></li>
+<li><code>git add .</code> 添加全部</li>
+<li><code>git diff</code> 查看区别</li>
+<li><code>git commit -m "comment"</code> 提交并添加备注</li>
+<li><code>git status</code> 查看当前状态</li>
+</ol>
+<h4 id="rollback"><a class="toclink" href="../../2024/07/05/git-study-notes/#rollback">Rollback</a></h4>
+<ol>
+<li><code>git log</code> 查看**完整**日志</li>
+<li><code>git log --pretty=oneline</code> 简要日志，只一行，显示当前的版本号和<code>commit</code>信息</li>
+<li><code>git reset --hard xxxx</code>
+    参数<ul>
+<li><code>HEAD</code>表示当前版本</li>
+<li><code>HEAD^, HEAD^^, HEAD~100</code> 前一个，前两个，前100。只能回退</li>
+<li><code>commit id</code> 不需要完整的id，显示出差异化即可。可以在回退后再回去之后的版本</li>
+</ul>
+</li>
+<li><code>git reflog</code> 记录每一次命令和差异化的<code>commit id</code>便于吃后悔药
+    <strong>back to future</strong></li>
+<li><code>git checkout -- xx.md</code> 尚未进行<code>git add</code> 添加到工作区时，丢弃工作区的修改</li>
+<li><code>git reset HEAD readme.txt</code> 在<code>git add</code>进入暂存区后将暂存区的修改撤销，重放回工作区</li>
+</ol>
+<h4 id="remove"><a class="toclink" href="../../2024/07/05/git-study-notes/#remove">Remove</a></h4>
+<p>本地删除<code>rm readme.md</code> ,此时工作区和版本库不一致，<code>git status</code>会有所显示
+    接下来
+    1. 确实要删<code>git rm readme.md</code> 从版本库中删除，然后<code>git commit</code>
+    2. 删错了<code>git checkout readme.md</code> 用版本库里的版本替换工作区的版本</p>
+<h3 id="concepts-and-principles"><a class="toclink" href="../../2024/07/05/git-study-notes/#concepts-and-principles">Concepts and Principles</a></h3>
+<ul>
+<li><code>.git</code> 隐藏目录，是版本库</li>
+<li><code>stage</code> or <code>index</code> 是暂存区，在版本库中</li>
+<li><code>git add</code>进入暂存区，<code>git commit</code>提交进分支</li>
+<li>Git自动创建的分支为<code>master</code></li>
+<li><code>git commit</code>只会提交被add到暂存区的内容，没有add，就不会commit</li>
+</ul>
+<h3 id="branch-management"><a class="toclink" href="../../2024/07/05/git-study-notes/#branch-management">Branch Management</a></h3>
+<h4 id="create-and-merge"><a class="toclink" href="../../2024/07/05/git-study-notes/#create-and-merge">Create and Merge</a></h4>
+<ul>
+<li>创建分支 <code>git branch &lt;name&gt;</code> </li>
+<li>查看分支 <code>git branch</code> </li>
+<li>切换分支 <code>git checkout &lt;name&gt;</code> or <code>git switch &lt;name</code></li>
+<li>创建+切换 <code>git checkout -b &lt;name&gt;</code> or <code>git switch -c &lt;name&gt;</code></li>
+<li>合并到当前分支 <code>git merge &lt;name&gt;</code></li>
+<li>删除分支 <code>git branch -d &lt;name&gt;</code></li>
+</ul>
+<h4 id="fix-conflict"><a class="toclink" href="../../2024/07/05/git-study-notes/#fix-conflict">Fix Conflict</a></h4>
+<h5 id="conflict"><a class="toclink" href="../../2024/07/05/git-study-notes/#conflict">何时出现conflict？</a></h5>
+<ol>
+<li>你改开头，我改结尾，合并分支，不冲突</li>
+<li>你该开头，我改开头，合并分支，冲突
+产生冲突后，Git在产生冲突的文件中用<code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>，<code>=======</code>，<code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>标记出不同分支的内容，需要解决冲突后保存</li>
+</ol>
+<h5 id="_1"><a class="toclink" href="../../2024/07/05/git-study-notes/#_1">解决冲突与合并</a></h5>
+<p>将Git标记的内容进行修改，修改后极为解决冲突
+合并：再进行
+- <code>git add &lt;file&gt;</code> 
+- <code>git commit -m "..."</code>
+此时时使用 <code>git log</code> 命令可以看到分支的合并情况
+- 带点参数，更清晰的: <code>git log --graph --pretty=oneline --abbrev-commit</code></p>
+<h4 id="branch-management-strategy"><a class="toclink" href="../../2024/07/05/git-study-notes/#branch-management-strategy">Branch Management Strategy</a></h4>
+<h4 id="bug-branch"><a class="toclink" href="../../2024/07/05/git-study-notes/#bug-branch">Bug Branch</a></h4>
+<blockquote>
+<p>[!NOTE] 注意提交
+在bug分支上操作要进行提交，如果未提交，直接切换分支，在bug分支中的内容在当前分支中也会有，但是如果此时进行commit，那么bug中的修改会被覆盖，也就是说这次未提交的操作小时了，存在于当前分支了。</p>
+</blockquote>
+<p>主分支需要修改bug，但是手上工作在dev分支不能停怎么办？
+- 使用命令 <code>git stash</code> 不需要进行提交，就可以得到clean working tree
+主分支改完回去继续工作？
+1. <code>git stash list</code> 查看刚才的工作现场
+2.  <code>git stash pop</code> 恢复工作现场的同时把stash内容删除
+3. <code>git stash apply stash{0}</code> 恢复指定的工作现场
+4. <code>git stash apply</code> 恢复工作现场，不删除 + <code>git stash drop</code> 删除stash内容
+在master改动的bug想要同步到dev上？
+- <code>git cherry-pick &lt;commit id&gt;</code> commit id 是上次master更改时的id</p>
+<h4 id="team-workremote-branch"><a class="toclink" href="../../2024/07/05/git-study-notes/#team-workremote-branch">Team Work(Remote Branch)</a></h4>
+<h5 id="_2"><a class="toclink" href="../../2024/07/05/git-study-notes/#_2">推送分支</a></h5>
+<p>推送时要指定本地分支，Git会把该分支推送到远程对应分支
+1. <code>git push origin master</code>
+2. <code>git push origin dev</code></p>
+<h5 id="_3"><a class="toclink" href="../../2024/07/05/git-study-notes/#_3">抓取分支</a></h5>
+<p>本地<code>git clone</code>远程库之后，默认只有<code>master</code>分支
+要在其他分支上开发，需要创建本地分支，和远程分支连接
+- <code>git checkout -b dev origin/dev</code>就可以进行正常的提交、<code>push</code>等操作</p>
+<h5 id="_4"><a class="toclink" href="../../2024/07/05/git-study-notes/#_4">解决冲突</a></h5>
+<p>两个人对同一个分支进行修改，需要解决冲突
+- <code>git pull</code>拉下代码，本地合并、解决冲突，之后推送
+- <code>git pull</code>默认得到的是<code>master</code>分支，需要本地先切到<code>master</code>分支
+- 要拉取其他分支？
+    - <code>git branch -set-upstream-to=origin/dev</code>,指定本地<code>dev</code>分支与远程<code>origin/dev</code>分支之间的连接
+    - <code>git pull</code> 在进行正常的拉取
+    - 后续解决<code>conflict</code></p>
+<h5 id="commands_1"><a class="toclink" href="../../2024/07/05/git-study-notes/#commands_1">Commands</a></h5>
+<ol>
+<li><code>git remote</code> and <code>git remote -v</code> 查看远程库信息</li>
+<li><code>git push origin &lt;branch-name&gt;</code> 推送分支，失败则需先<code>git pull</code>抓取远程的新提交</li>
+<li><code>git checkout -b branch-name origin/branch-name</code>，创建本地对应的分支</li>
+<li><code>git branch --set-upstream &lt;branch-name&gt; origin /&lt;branch-name&gt;</code> 建立本地和远程的的关联</li>
+</ol>
+<h4 id="git-rease"><a class="toclink" href="../../2024/07/05/git-study-notes/#git-rease">Git Rease</a></h4>
+<h3 id="tags"><a class="toclink" href="../../2024/07/05/git-study-notes/#tags">Tags</a></h3>
+<p>tags的意义在于，要找某次提交时，不是死盯着他的<code>commit id</code>，可以直接换成tag</p>
+<h4 id="_5"><a class="toclink" href="../../2024/07/05/git-study-notes/#_5">创建标签</a></h4>
+<ol>
+<li>切换到需要打标签的分支</li>
+<li><code>git tag &lt;name&gt;</code> 创建标签</li>
+<li><code>git tag</code> 查看所有标签</li>
+<li>默认在最新的commit上，如果需要打之前的，要<code>git log --...</code>找到commit id，再`git tag <tag_name> <commit_id></li>
+<li>标签不是俺时间顺序列出的，而是按照字母排序的</li>
+<li><code>git show &lt;tag_name&gt;</code> 查看标签信息</li>
+<li><code>git tag -a &lt;tag_name&gt; -m "comment" &lt;commit_id&gt;</code> 带说明的标签，再<code>git show &lt;tag_name&gt;</code> 可以看到说明</li>
+</ol>
+<h4 id="_6"><a class="toclink" href="../../2024/07/05/git-study-notes/#_6">操作标签</a></h4>
+<h5 id="_7"><a class="toclink" href="../../2024/07/05/git-study-notes/#_7">推送标签到远程</a></h5>
+<ol>
+<li><code>git push origin &lt;tag_name&gt;</code> 推送一个</li>
+<li><code>git push origin --tags</code> 全部推送</li>
+</ol>
+<h5 id="_8"><a class="toclink" href="../../2024/07/05/git-study-notes/#_8">删除标签</a></h5>
+<ol>
+<li>本地删除 <code>git tag -d &lt;tag_name&gt;</code></li>
+<li>推送到远程之后要删除？<ul>
+<li>先本地删除</li>
+<li>再 <code>git push origin :refs/tags/&lt;tag_name&gt;</code> 远程删除</li>
+</ul>
+</li>
+</ol>
+    
+  </div>
+</article>
       
         <article class="md-post md-post--excerpt">
   <header class="md-post__header">
